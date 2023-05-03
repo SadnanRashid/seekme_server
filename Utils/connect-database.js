@@ -4,7 +4,7 @@ let client = null;
 
 const connectDatabase = () => {
   if (client === null) {
-    const uri = `mongodb+srv://admin:12345sad@cluster0.tvyjzb3.mongodb.net/?retryWrites=true&w=majority`;
+    const uri = `mongodb+srv://admin:12345sad@cluster0.nx7ynwz.mongodb.net/?retryWrites=true&w=majority`;
     client = new MongoClient(uri, {
       useNewUrlParser: true,
       useUnifiedTopology: true,

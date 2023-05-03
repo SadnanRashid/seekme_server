@@ -11,9 +11,9 @@ app.listen(port, () => {
   console.log(`listening at port ${port}`);
 });
 
-// Get user router
-// const userRouter = require("./Routes/user/user-routes");
-// app.use("/api/users", userRouter);
+// Get blog router
+const blogRouter = require("./Routes/blog.routes");
+app.use("/api/blogs", blogRouter);
 
 app.get("/", (req, res) => {
   res.send({ message: "Running server..." });
