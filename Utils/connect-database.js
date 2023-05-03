@@ -1,7 +1,5 @@
 const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 
-const password = "Happy%40123";
-
 let client = null;
 
 const connectDatabase = () => {
@@ -18,7 +16,7 @@ const connectDatabase = () => {
 
 const getCollection = (collection) => {
   const client = connectDatabase();
-  return client.db("ninja_lawyer").collection(collection);
+  return client.db("seekme").collection(collection);
 };
 
 const checkConnection = () => {
